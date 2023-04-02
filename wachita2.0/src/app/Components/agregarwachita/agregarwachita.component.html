@@ -13,10 +13,44 @@
         <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
 
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Nombre o Nro" formControlName="nombre">
+            <input type="text" class="form-control inputc" id="floatingInput" placeholder="Nombre o Nro" formControlName="nombre" autocomplete="off">
             <label for="floatingInput">Nombre o Nro</label>
           </div>
+          <div class="form-floating mb-3">
+            <select input class="form-select inputc" id="floatingSelect" aria-label="Floating label select example" formControlName="raza">
+              <option value="Nelore">Nelore</option>
+              <option value="Mestizo">Mestizo</option>
+              <option value="Holandesa">Holandesa</option>
+            </select>
+            <label for="floatingSelect">Seleccione una raza</label>
+          </div>
+          <div class="form-floating mb-3">
+            <select input class="form-select inputc" id="floatingSelect" aria-label="Floating label select example" formControlName="dueno">
+              
+              <option value="Oscar Azcarraga Coronado">Oscar Azcarraga Coronado</option>
+              <option value="Carlos Azcarraga Esquivel Y Jahel">Carlos Azcarraga Esquivel Y Jahel</option>
+              <option value="Pablo Azcarraga Esquivel">Pablo Azcarraga Esquivel</option>
+              <option value="Oscar Azcarraga Esquivel y Neiza">Oscar Azcarraga Esquivel y Neiza</option>
+              <option value="Neiza Esquivel Alvis">Neiza Esquivel Alvis</option>
+            </select>
+            <label for="floatingSelect">Seleccione un Dueño</label>
+          </div>
+        
 
-          <input type="submit" value="Enviar" class="btn btn-info">
+          <input type="submit" value="Enviar" class="btn btn-info mx-2">
+          <button type="button" class="btn btn-warning mx-2" routerLink="/principal">Volver</button>
 
         </form>
+        <br>
+        <br>
+        <p></p>
+        
+        <div *ngIf="formularioEnviado" class="alert alert-success" role="alert"> Formulario enviado correctamente.
+          </div>
+          
+          
+          
+          
+          
+          
+          
