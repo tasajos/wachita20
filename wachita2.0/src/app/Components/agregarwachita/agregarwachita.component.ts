@@ -23,6 +23,10 @@ export class AgregarwachitaComponent implements OnInit {
       nombre: new FormControl(),
       raza: new FormControl(),
       dueno: new FormControl(),
+      edada: new FormControl(),
+      edadm: new FormControl(),
+      observacion: new FormControl(),
+      color: new FormControl(),
      
     })
   }

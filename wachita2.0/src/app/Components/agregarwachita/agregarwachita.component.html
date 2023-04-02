@@ -11,7 +11,8 @@
     <!--        <form [formGroup]="form" (ngSubmit)="agregarwachita()">-->
 
         <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-
+      <div class="row">
+     <div class="col-md-6"></div>
         <div class="form-floating mb-3">
             <input type="text" class="form-control inputc" id="floatingInput" placeholder="Nombre o Nro" formControlName="nombre" autocomplete="off">
             <label for="floatingInput">Nombre o Nro</label>
@@ -35,11 +36,66 @@
             </select>
             <label for="floatingSelect">Seleccione un Dueño</label>
           </div>
+        </div>
+        <div class="col-md-6">
+                  <div class="form-floating mb-3">
+            <select input class="form-select inputc" id="floatingSelect" aria-label="Floating label select example" formControlName="edada">
+              
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+    
+            </select>
+            <label for="floatingSelect">Cuantos Años tiene</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <select input class="form-select inputc" id="floatingSelect" aria-label="Floating label select example" formControlName="edadm">
+              
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+             
+            </select>
+            <label for="floatingSelect">Cuantos Meses tiene</label>
+          </div>
         
+          <div class="form-floating mb-3">
+            <select input class="form-select inputc" id="floatingSelect" aria-label="Floating label select example" formControlName="observacion">
+              
+              <option value="Nacido">Nacido</option>
+              <option value="Maternidad">Maternidad</option>
+              <option value="Transferencia">Transferencia</option>
+              <option value="Fallecido">Fallecido</option>
+              </select>
+            <label for="floatingSelect">Observacion</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control inputc" id="floatingInput" placeholder="color" formControlName="color" autocomplete="off">
+            <label for="floatingInput">Color</label>
+          </div>
 
           <input type="submit" value="Enviar" class="btn btn-info mx-2">
           <button type="button" class="btn btn-warning mx-2" routerLink="/principal">Volver</button>
-
+        </div>
         </form>
         <br>
         <br>
