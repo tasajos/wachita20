@@ -15,5 +15,9 @@ export class WservicesService {
     const placeRef = collection(this.firestore,'wachas');
 return addDoc(placeRef,wachitainter);
   }
- 
+  getPlaces(): Observable<Wachitainter[]> {
+    const placeRef = collection(this.firestore, 'wachas');
+    return collectionData(placeRef, { idField: 'id' }) as Observable<Wachitainter[]>;
+  }
+
 }

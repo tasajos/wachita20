@@ -1,1 +1,36 @@
-<p>listar works!</p>
+<div class="basic">
+    <h2> WACHITA</h2>
+</div>
+<br>
+<br>
+<br>
+
+<div class="container" mb-2>
+    
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre <img class="sort-icon" src ="../../../assets/img/sortby.png" (click)="sortByNombre()"> </th>
+        <th scope="col">Dueño <img class="sort-icon" src ="../../../assets/img/sortby.png" (click)="sortByDueno()"></th>
+        <th scope="col">Edad</th>
+        <th scope="col">Imagen</th>
+        <th scope="col">Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let place of places">
+        <td>{{place.nombre}}</td>
+        <td>{{place.dueno}}</td>
+        <td>{{place.edada}}</td>
+        <td>{{place.imagen}}</td>
+        <td>{{place.fechar}}</td>
+        <td>
+          <div class="image" [ngStyle]="{ backgroundImage: 'url('+place.imagen+')' }"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<button type="button" class="btn btn-warning mx-2" routerLink="/principal">Volver</button>
+  
