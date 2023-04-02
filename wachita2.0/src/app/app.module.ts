@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrincipalComponent } from './Components/principal/principal.component';
@@ -15,6 +17,9 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { ListarComponent } from './Components/listar/listar.component';
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +27,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     PrincipalComponent,
     IuloginComponent,
     AgregarwachitaComponent,
-    NavbarComponent
+    NavbarComponent,
+    ListarComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,9 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage()),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
