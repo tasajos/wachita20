@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { PrincipalComponent } from './Components/principal/principal.component';
 import { IuloginComponent } from './Components/iulogin/iulogin.component';
 import { AgregarwachitaComponent } from './Components/agregarwachita/agregarwachita.component';
+import { NavbarComponent } from './Components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
     IuloginComponent,
-    AgregarwachitaComponent
+    AgregarwachitaComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

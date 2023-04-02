@@ -6,5 +6,7 @@ install bootstrat
     >"node_modules/bootstrap/dist/css/bootstrap.min.css"
     >Busca la sección "scripts" y agrega la siguiente línea de código:
     >"node_modules/bootstrap/dist/js/bootstrap.min.js"
+configurar routerLink
+    >AppRoutingModule
+    ><router-outlet></router-outlet> 
 
-    >
