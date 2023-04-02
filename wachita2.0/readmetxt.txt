@@ -9,4 +9,8 @@ install bootstrat
 configurar routerLink
     >AppRoutingModule
     ><router-outlet></router-outlet> 
+firebase login
+    >firebase login
+    >firebase projects:list
+    >ng add @angular/fire
 
