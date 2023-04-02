@@ -14,3 +14,10 @@ firebase login
     >firebase projects:list
     >ng add @angular/fire
 
+    en filestorage a;adir
+
+     imports: [
+        ...
+        AngularFireModule.initializeApp(environment.firebase),
+    ],
+

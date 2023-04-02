@@ -3,9 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrincipalComponent } from './Components/principal/principal.component';
@@ -18,6 +15,12 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { ListarComponent } from './Components/listar/listar.component';
+import { VisualComponent } from './Components/visual/visual.component';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFireModule } from "@angular/fire/compat";
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+
+
 
 
 
@@ -28,7 +31,8 @@ import { ListarComponent } from './Components/listar/listar.component';
     IuloginComponent,
     AgregarwachitaComponent,
     NavbarComponent,
-    ListarComponent
+    ListarComponent,
+    VisualComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,10 @@ import { ListarComponent } from './Components/listar/listar.component';
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage()),
     ReactiveFormsModule,
+    AngularFireStorageModule,
+    AngularFireModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    
     
     
   ],

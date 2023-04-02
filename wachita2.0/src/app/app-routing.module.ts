@@ -4,6 +4,7 @@ import { PrincipalComponent } from './Components/principal/principal.component';
 import { AgregarwachitaComponent } from './Components/agregarwachita/agregarwachita.component';
 import { IuloginComponent } from './Components/iulogin/iulogin.component';
 import { ListarComponent } from './Components/listar/listar.component';
+import { VisualComponent } from './Components/visual/visual.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'principal',pathMatch:'full'},
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'agregarw', component:AgregarwachitaComponent},
   {path: 'login', component:IuloginComponent},
   {path: 'listar', component:ListarComponent},
+  {path: 'visual', component:VisualComponent},
   //{path: 'verwachita/:id', component:VerWachitaComponent},
   //{path: 'seguimienton', component:SeguimientonComponent},
   //{path: 'seguimientov', component:SeguimientovComponent},
