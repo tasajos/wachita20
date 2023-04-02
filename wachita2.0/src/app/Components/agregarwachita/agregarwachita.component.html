@@ -1,1 +1,22 @@
-<p>agregarwachita works!</p>
+<div class="basic">
+    <h2> WACHITA</h2>
+</div>
+<br>
+<br>
+<br>
+
+<app-navbar></app-navbar>
+
+<div class="container">
+    <!--        <form [formGroup]="form" (ngSubmit)="agregarwachita()">-->
+
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Nombre o Nro" formControlName="nombre">
+            <label for="floatingInput">Nombre o Nro</label>
+          </div>
+
+          <input type="submit" value="Enviar" class="btn btn-info">
+
+        </form>
