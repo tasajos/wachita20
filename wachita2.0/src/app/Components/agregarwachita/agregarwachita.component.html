@@ -93,6 +93,12 @@
             <label for="floatingInput">Color</label>
           </div>
 
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label" >Enviar imagen de la vaca</label>
+            <input class="form-control inputc" type="file" (change)="uploadImage($event)" id="formFile" formControlName="imagen">
+          </div>
+
           <input type="submit" value="Enviar" class="btn btn-info mx-2">
           <button type="button" class="btn btn-warning mx-2" routerLink="/principal">Volver</button>
         </div>

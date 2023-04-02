@@ -7,6 +7,7 @@ export interface Wachitainter {
     edadm: string;
     observacion: string;
     color: string;
+    imagen: string;
    // description: string;
     //image: string;
 
