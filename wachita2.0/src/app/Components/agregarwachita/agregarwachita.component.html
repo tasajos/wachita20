@@ -98,6 +98,11 @@
             <label for="formFile" class="form-label" >Enviar imagen de la vaca</label>
             <input class="form-control inputc" type="file" (change)="uploadImage($event)" id="formFile" formControlName="imagen">
           </div>
+          <div class="mb-3">
+            <label for="fecha">Fecha:</label>
+            <input type="datetime-local" id="fecha" formControlName="fechar" name="fecha" class="form-control inputc"  
+                   [value]="fechaActual" [disabled]="true">
+          </div>
 
           <input type="submit" value="Enviar" class="btn btn-info mx-2">
           <button type="button" class="btn btn-warning mx-2" routerLink="/principal">Volver</button>

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators,FormControl } from '@angular/forms';
 import { WservicesService } from 'src/app/Servicios/wservices.service';
 import { Storage,ref,uploadBytes, listAll, getDownloadURL} from '@angular/fire/storage'
+//import { Date } from 'Date';
+
 
 @Component({
   selector: 'app-agregarwachita',
@@ -15,13 +17,14 @@ export class AgregarwachitaComponent implements OnInit {
   formularioEnviado = false;
   mostrarAlerta: boolean = false; // Definición e inicialización de la propiedad
   images: string [];
-
+  fechaActual: string;
 
   constructor(
     private wservice:WservicesService,
     private storage: Storage 
   ) 
   {
+    this.fechaActual = new Date().toISOString().slice(0, 16);
     this.images=[];
     this.formulario = new FormGroup({
       nombre: new FormControl(),
@@ -32,12 +35,15 @@ export class AgregarwachitaComponent implements OnInit {
       observacion: new FormControl(),
       color: new FormControl(),
       imagen: new FormControl(),
+      fechar: new FormControl(),
      
     })
   }
 
   ngOnInit() {
     this.getImages();
+    const date = new Date();
+    this.fechaActual = date.toLocaleString();
   }
 
   uploadImage ($event:any) {

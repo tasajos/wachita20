@@ -8,6 +8,8 @@ export interface Wachitainter {
     observacion: string;
     color: string;
     imagen: string;
+
+    fechar: boolean;
    // description: string;
     //image: string;
 
