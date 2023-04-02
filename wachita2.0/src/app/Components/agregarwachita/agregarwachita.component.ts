@@ -54,6 +54,8 @@ async onSubmit() {
   setTimeout(() => {
     this.formularioEnviado = false;
   }, 3000);
+  this.formulario.reset();
+
 }
 
 }
