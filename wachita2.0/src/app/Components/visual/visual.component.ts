@@ -12,6 +12,8 @@ import { firstValueFrom } from 'rxjs';
 })
 export class VisualComponent implements OnInit {
   imageUrls: string[] = [];
+  imageClicked = false;
+  selectedImage: string = '';
 
   constructor(private storage: AngularFireStorage) { }
 
@@ -20,5 +22,9 @@ export class VisualComponent implements OnInit {
     const list = await firstValueFrom(storageRef.listAll());
     const urlsPromises = list.items.map((item) => item.getDownloadURL());
     this.imageUrls = await Promise.all(urlsPromises);
+  }
+  onImageClicked(imageUrl: string) {
+    this.imageClicked = true;
+    this.selectedImage = imageUrl;
   }
 }

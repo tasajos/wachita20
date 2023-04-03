@@ -1,23 +1,25 @@
 <div class="basic">
-    <h2> WACHITA</h2>
+  <h2> WACHITA</h2>
 </div>
 <br>
 <br>
 <br>
 <div class="container">
-    <div class="card-wrapper">
-        <div class="row">
-            <div class="col-md-4 mb-4" *ngFor="let imageUrl of imageUrls">
-              <div class="card">
-                <br>
-                    <br>
-                <img class="card-img-top" [src]="imageUrl" alt="Imagen de ejemplo">
-                <div class="card-body">
-                  <h5 class="card-title">Listado</h5>
-                  <p class="card-text">Fecha de Revision 18/03/2023</p>
-                  <a href="#" class="btn btn-primary"routerLink="/listar" >Listado Completo</a>
-                </div>
-              </div>
-            </div>
+  <div class="card-wrapper">
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let imageUrl of imageUrls">
+        <div class="card d-flex" (click)="onImageClicked(imageUrl)">
+          <br>
+          <br>
+          <img class="card-img-top img-fluid" [src]="imageUrl" alt="Imagen de ejemplo">
+          <div class="card-body justify-content-center">
+            <h5 class="card-title">Listado</h5>
+            <p class="card-text">Fecha de Revision 18/03/2023</p>
+            <a href="#" class="btn btn-primary" routerLink="/listar">Listado Completo</a>
           </div>
-          <button type="button" class="btn btn-warning mx-2" routerLink="/principal">Volver</button>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-warning mx-2" routerLink="/principal">Volver</button>
+  </div>
+</div>

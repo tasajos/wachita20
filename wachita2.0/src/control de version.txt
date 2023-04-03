@@ -1,0 +1,1 @@
+1.3 - Resize main Principal view making responsible

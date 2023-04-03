@@ -1,71 +1,51 @@
 <div class="basic" style="position: relative;">
-    <img [src]="imagenUrl" [ngStyle]="{'width': '50px', 'position': 'absolute', 'left': '0'}">    <h2 tyle="margin-left: 40px;"> WACHITA</h2>
+  <img [src]="imagenUrl" [ngStyle]="{'width': '50px', 'position': 'absolute', 'left': '0'}">
+  <h2 style="margin-left: 40px;">WACHITA - v 1.3</h2>
+</div>
+<br>
+<br>
+<br>
+<app-navbar></app-navbar>
+<div class="container mb-2">
+  <div class="card-deck">
+    <div class="card">
+      <img src="../../../assets/img/wacha.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h2 class="card-title">Registro</h2>
+        <p class="card-text">Registra aquí tu <strong>vaquita</strong></p>
+        <button type="button" class="btn btn-outline-primary mx-2" routerLink="/agregarw">Ingresar</button>
+        <button type="button" class="btn btn-outline-info">Retornar</button>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Registro</li>
+        <li class="list-group-item">Traslado</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="../../../assets/img/18.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h2 class="card-title">Tarjetas</h2>
+        <p class="card-text">Haz el seguimiento de la vaca <strong>Registros</strong></p>
+        <button type="button" class="btn btn-outline-primary mx-2" routerLink="/visual">Ingresar</button>
+        <button type="button" class="btn btn-outline-info" routerLink="">Retornar</button>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Mes</strong> Marzo</li>
+        <li class="list-group-item"><strong>Cantidad</strong> 33</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="../../../assets/img/inyecciones_vacuna.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h2 class="card-title">Control <strong>Wachita</strong> Sana</h2>
+        <p class="card-text">Registro de vacunas y otros medicamentos</p>
+        <button type="button" class="btn btn-outline-primary mx-2" routerLink="/seguimienton">Ingresar</button>
+        <button type="button" class="btn btn-outline-info">Retornar</button>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Vacunas</li>
+        <li class="list-group-item">Aislamiento</li>
+      </ul>
+    </div>
   </div>
-  <br>
-  <br>
-  <br>
- <app-navbar></app-navbar>
-  <div class="container" mb-2>
-      <div class="card" style="width: 18rem;">
-          <img src="../../../assets/img/wacha.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h2 class="card-title">Registro</h2>
-            <p class="card-text">Registra aqui tu <strong>vaquita</strong> </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Registro</li>
-            <li class="list-group-item">Traslado</li>
-            
-          </ul>
-          <div class="card-body">
-            <button type="button" class="btn btn-outline-primary mx-2" routerLink="/agregarw">Ingresar</button>
-            <button type="button" class="btn btn-outline-info">Retornar</button>
-          </div>
-          
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="../../../assets/img/18.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h2 class="card-title">Tarjetas</h2>
-            <p class="card-text">Haz el seguimiento de la vaca<strong> Registros</strong></p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>Mes</strong> Marzo</li>
-            <li class="list-group-item"><strong>Cantidad</strong> 33</li>
-            
-          </ul>
-          <div class="card-body">
-              <button type="button" class="btn btn-outline-primary mx-2" routerLink="/visual">Ingresar</button>
-              <button type="button" class="btn btn-outline-info" routerLink="">Retornar</button>
-          </div>
-          
-        </div>
-  
-        <div class="card" style="width: 18rem;">
-          <img src="../../../assets/img/inyecciones_vacuna.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h2 class="card-title">Control <strong>Wachita</strong> Sana</h2>
-            <p class="card-text">Registro de vacunas y otros medicamentos</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Vacunas</li>
-            <li class="list-group-item">Aislamiento</li>
-            
-          </ul>
-          <div class="card-body">
-              <button type="button" class="btn btn-outline-primary mx-2" routerLink="/seguimienton">Ingresar</button>
-              <button type="button" class="btn btn-outline-info">Retornar</button>
-          </div>
-          
-        </div>
-        
-     <br>   
-     <br>   
-     <br>   
-  </div>
- <!-- <app-mboard></app-mboard>-->
-  <br>
-  <br>
-  <p></p>
-  
-  
+</div>
